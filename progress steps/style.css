@@ -31,6 +31,32 @@ body {
     margin-bottom: 30px;
     max-width: 100%;
     width: 350px;
+    border: 2px solid black;
+    height: 30px;
+}
+
+.progress-container::before{
+    content:'';
+    background-color: var(--line-border-empty);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform:translateY(-50%);
+    height: 4px;
+    width: 100%;
+    z-index: -1;
+}
+
+.progress{
+    background-color: var(--line-border-fill);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 0%;
+    z-index: -1;
+    transition: 0.4s ease;
 }
 
 .circle{
@@ -49,6 +75,28 @@ body {
 
 .circle.active{
     border-right-color: var(--line-border-fill);
+}
+
+.btn{
+    background-color: var(--line-border-fill);
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 8px 30px;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.btn:active{
+    transform: scale(0.98);
+}
+
+.btn:focus{
+    outline: 0;
+}
+
+.btn:disabled{
+    background-color: var(--line-border-empty);
+    cursor: not-allowed;
 }
 
 
