@@ -1,0 +1,54 @@
+
+:root {
+  --line-border-fill: #3498db;
+  --line-border-empty: #e0e0e0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f7fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Muli',sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+
+}
+
+.container{
+    text-align: center;
+}
+
+.progress-container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 100%;
+    width: 350px;
+}
+
+.circle{
+    position: absolute;
+    background-color: rgb(192, 51, 51);
+    color: #999;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--line-border-empty);
+    transition: 0.4s ease;
+}
+
+.circle.active{
+    border-right-color: var(--line-border-fill);
+}
+
+
