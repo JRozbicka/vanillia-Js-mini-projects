@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 :root {
   --line-border-fill: #3498db;
   --line-border-empty: #e0e0e0;
@@ -31,8 +31,8 @@ body {
     margin-bottom: 30px;
     max-width: 100%;
     width: 350px;
-    border: 2px solid black;
-    height: 30px;
+    /* border: 2px solid black;
+    height: 30px; */
 }
 
 .progress-container::before{
@@ -60,7 +60,7 @@ body {
 }
 
 .circle{
-    position: absolute;
+    
     background-color: rgb(192, 51, 51);
     color: #999;
     border-radius: 50%;
