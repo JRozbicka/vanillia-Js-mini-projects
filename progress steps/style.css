@@ -61,7 +61,7 @@ body {
 
 .circle{
     
-    background-color: rgb(192, 51, 51);
+    background-color:#fff;
     color: #999;
     border-radius: 50%;
     width: 30px;
@@ -75,15 +75,19 @@ body {
 
 .circle.active{
     border-right-color: var(--line-border-fill);
+  
 }
 
 .btn{
     background-color: var(--line-border-fill);
+    color :#fff;
+    border:0;
     border-radius: 6px;
     cursor: pointer;
     padding: 8px 30px;
     margin: 5px;
     font-size: 14px;
+    font-family: inherit;
 }
 
 .btn:active{
